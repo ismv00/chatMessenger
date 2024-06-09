@@ -36,3 +36,5 @@ class SignUpViewModel : ObservableObject {
         }
     }
 }
+
+//teste
