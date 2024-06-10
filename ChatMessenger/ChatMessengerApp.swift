@@ -7,18 +7,18 @@
 
 import SwiftUI
 import FirebaseCore
+import FirebaseAuth
 
 @main
 struct ChatMessengerApp: App {
     init() {
         FirebaseApp.configure()
-        
     }
    
     
     var body: some Scene {
         WindowGroup {
-            SignInView()
+            ContentView()
         }
     }
 }
