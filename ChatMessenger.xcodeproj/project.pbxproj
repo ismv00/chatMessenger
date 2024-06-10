@@ -16,6 +16,7 @@
 		956A15242C115D1B00C50122 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956A15232C115D1B00C50122 /* SignUpView.swift */; };
 		956A15262C115D6C00C50122 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956A15252C115D6C00C50122 /* SignUpViewModel.swift */; };
 		956A15282C11685900C50122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 956A15272C11685900C50122 /* GoogleService-Info.plist */; };
+		95713B032C168CCE009D7FCA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95713B022C168CCE009D7FCA /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		956A15232C115D1B00C50122 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		956A15252C115D6C00C50122 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		956A15272C11685900C50122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95713B022C168CCE009D7FCA /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ../../../../../Downloads/ImagePicker.swift; sourceTree = "<group>"; };
 		DF4533A8A7CD94E57A9A9B17 /* Pods-ChatMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMessenger.release.xcconfig"; path = "Target Support Files/Pods-ChatMessenger/Pods-ChatMessenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +73,7 @@
 				956A151F2C11584D00C50122 /* SignInViewModel.swift */,
 				956A15232C115D1B00C50122 /* SignUpView.swift */,
 				956A15252C115D6C00C50122 /* SignUpViewModel.swift */,
+				95713B022C168CCE009D7FCA /* ImagePicker.swift */,
 				956A15272C11685900C50122 /* GoogleService-Info.plist */,
 				956A15152C11514000C50122 /* Assets.xcassets */,
 				956A15172C11514000C50122 /* Preview Content */,
@@ -221,6 +224,7 @@
 				956A15242C115D1B00C50122 /* SignUpView.swift in Sources */,
 				956A15142C11513D00C50122 /* SignInView.swift in Sources */,
 				956A15262C115D6C00C50122 /* SignUpViewModel.swift in Sources */,
+				95713B032C168CCE009D7FCA /* ImagePicker.swift in Sources */,
 				956A15122C11513D00C50122 /* ChatMessengerApp.swift in Sources */,
 				956A15202C11584E00C50122 /* SignInViewModel.swift in Sources */,
 			);
