@@ -8,11 +8,12 @@
 import Foundation
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseFirestore
 
 class SignUpViewModel : ObservableObject {
-    var name = ""
-    var email = ""
-    var password = ""
+    @Published var name = ""
+    @Published var email = ""
+    @Published var password = ""
     
     @Published var image = UIImage()
     
@@ -66,9 +67,34 @@ class SignUpViewModel : ObservableObject {
         ref.putData(data, metadata: newMetadata) {metadata, err in
             ref.downloadURL {url, error in
                 self.isLoading = false
+                
+                guard let url = url else { return }
                 print("Foto criada \(url)")
+                
+                // chamada da funcção de criar usuário
+                self.createUser(photoUrl: url)
             }
         }
+    }
+    
+    // Função de criar usuário tendo como parametro a url da photo
+    private func createUser(photoUrl: URL) {
+        // Cria a coleção no banco chamada Users
+        Firestore.firestore().collection("users")
+            .document() // pega o nome e salva como document
+            
+        // Set os dados como um dictionary = chave + valor
+            .setData([
+                "name": name,
+                "uuid" : Auth.auth().currentUser!.uid,
+                "profileUrl": photoUrl.absoluteString
+            ]) { err in // Se existir um erro, mostra
+                self.isLoading = false
+                if err != nil {
+                    print(err!.localizedDescription)
+                    return
+                }
+            }
     }
 }
 
