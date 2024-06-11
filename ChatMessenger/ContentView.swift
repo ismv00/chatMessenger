@@ -11,10 +11,14 @@ struct ContentView: View {
     @StateObject var viewModel = ContentViewModel()
     
     var body: some View {
-        if viewModel.isLogged {
-            Text("Ola Mundo")
-        } else {
-            SignInView()
+        ZStack {
+            if viewModel.isLogged {
+                MessagesView()
+            } else {
+                SignInView()
+            }
+        }.onAppear {
+            viewModel.onAppear()
         }
     }
 }
