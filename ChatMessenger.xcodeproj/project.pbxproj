@@ -81,14 +81,14 @@
 				956A151F2C11584D00C50122 /* SignInViewModel.swift */,
 				956A15232C115D1B00C50122 /* SignUpView.swift */,
 				956A15252C115D6C00C50122 /* SignUpViewModel.swift */,
-				95713B022C168CCE009D7FCA /* ImagePicker.swift */,
-				956A15272C11685900C50122 /* GoogleService-Info.plist */,
-				956A15152C11514000C50122 /* Assets.xcassets */,
-				956A15172C11514000C50122 /* Preview Content */,
 				95713B042C16A45E009D7FCA /* ContentView.swift */,
 				95713B062C16A476009D7FCA /* ContentViewModel.swift */,
 				9579746A2C17F10900CC6A56 /* MessagesView.swift */,
 				9579746C2C17F14300CC6A56 /* MessagesViewModel.swift */,
+				95713B022C168CCE009D7FCA /* ImagePicker.swift */,
+				956A15272C11685900C50122 /* GoogleService-Info.plist */,
+				956A15152C11514000C50122 /* Assets.xcassets */,
+				956A15172C11514000C50122 /* Preview Content */,
 			);
 			path = ChatMessenger;
 			sourceTree = "<group>";
