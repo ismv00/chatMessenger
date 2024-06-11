@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         if viewModel.isLogged {
-            Text("Ola Mundo")
+            MessagesView()
         } else {
             SignInView()
         }
