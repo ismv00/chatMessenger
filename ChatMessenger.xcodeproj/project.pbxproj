@@ -21,6 +21,9 @@
 		95713B072C16A476009D7FCA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95713B062C16A476009D7FCA /* ContentViewModel.swift */; };
 		9579746B2C17F10A00CC6A56 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579746A2C17F10900CC6A56 /* MessagesView.swift */; };
 		9579746D2C17F14300CC6A56 /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579746C2C17F14300CC6A56 /* MessagesViewModel.swift */; };
+		9579746F2C1948DD00CC6A56 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579746E2C1948DD00CC6A56 /* ContactsView.swift */; };
+		957974712C19491F00CC6A56 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957974702C19491F00CC6A56 /* ContactsViewModel.swift */; };
+		957974732C1949AB00CC6A56 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957974722C1949AB00CC6A56 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		95713B062C16A476009D7FCA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		9579746A2C17F10900CC6A56 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		9579746C2C17F14300CC6A56 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		9579746E2C1948DD00CC6A56 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		957974702C19491F00CC6A56 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		957974722C1949AB00CC6A56 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		DF4533A8A7CD94E57A9A9B17 /* Pods-ChatMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMessenger.release.xcconfig"; path = "Target Support Files/Pods-ChatMessenger/Pods-ChatMessenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,9 @@
 				956A15272C11685900C50122 /* GoogleService-Info.plist */,
 				956A15152C11514000C50122 /* Assets.xcassets */,
 				956A15172C11514000C50122 /* Preview Content */,
+				9579746E2C1948DD00CC6A56 /* ContactsView.swift */,
+				957974702C19491F00CC6A56 /* ContactsViewModel.swift */,
+				957974722C1949AB00CC6A56 /* Contact.swift */,
 			);
 			path = ChatMessenger;
 			sourceTree = "<group>";
@@ -233,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957974732C1949AB00CC6A56 /* Contact.swift in Sources */,
 				95713B072C16A476009D7FCA /* ContentViewModel.swift in Sources */,
+				957974712C19491F00CC6A56 /* ContactsViewModel.swift in Sources */,
 				956A15242C115D1B00C50122 /* SignUpView.swift in Sources */,
 				9579746D2C17F14300CC6A56 /* MessagesViewModel.swift in Sources */,
 				9579746B2C17F10A00CC6A56 /* MessagesView.swift in Sources */,
@@ -242,6 +253,7 @@
 				956A15262C115D6C00C50122 /* SignUpViewModel.swift in Sources */,
 				95713B032C168CCE009D7FCA /* ImagePicker.swift in Sources */,
 				956A15122C11513D00C50122 /* ChatMessengerApp.swift in Sources */,
+				9579746F2C1948DD00CC6A56 /* ContactsView.swift in Sources */,
 				956A15202C11584E00C50122 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

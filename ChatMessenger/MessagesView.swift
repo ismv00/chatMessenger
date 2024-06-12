@@ -18,7 +18,7 @@ struct MessagesView: View {
             .toolbar{
                 ToolbarItem(id: "contacts",
                             placement: ToolbarItemPlacement.navigationBarTrailing, showsByDefault: true) {
-                    NavigationLink("Contatos", destination: Text("Tela de contatos falsa"))
+                    NavigationLink("Contatos", destination: ContactsView())
                 }
                 ToolbarItem(id: "logout",
                             placement: ToolbarItemPlacement.navigationBarTrailing, showsByDefault: true) {
