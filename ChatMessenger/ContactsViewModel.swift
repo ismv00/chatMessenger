@@ -10,8 +10,14 @@ import FirebaseFirestore
 
 class ContactsViewModel: ObservableObject {
     @Published var contacts: [Contact] = []
+    @Published var isLoading = false
+    
+    var isLoaded = false
     
     func getContacts() {
+        if isLoaded { return }
+        isLoading = true
+        isLoaded = true
         Firestore.firestore().collection("users")
             .getDocuments{ querySnapshot, error in
                 if let error = error  {
@@ -24,6 +30,7 @@ class ContactsViewModel: ObservableObject {
                                     name: document.data()["name"] as! String,
                                             profileUrl: document.data()["profileUrl"] as! String))
                 }
+                self.isLoading = false
             }
     }
 }
