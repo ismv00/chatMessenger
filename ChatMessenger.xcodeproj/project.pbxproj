@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2392E5997FB0E337A13410F2 /* Pods_ChatMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539798A93FBAA017BBE77F75 /* Pods_ChatMessenger.framework */; };
+		95184D492C1A986400BFD817 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95184D482C1A986400BFD817 /* Message.swift */; };
+		95184D4B2C1A991800BFD817 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95184D4A2C1A991800BFD817 /* ChatViewModel.swift */; };
+		95184D4D2C1A9C0200BFD817 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95184D4C2C1A9C0200BFD817 /* ChatView.swift */; };
 		956A15122C11513D00C50122 /* ChatMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956A15112C11513D00C50122 /* ChatMessengerApp.swift */; };
 		956A15142C11513D00C50122 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956A15132C11513D00C50122 /* SignInView.swift */; };
 		956A15162C11514000C50122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956A15152C11514000C50122 /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 /* Begin PBXFileReference section */
 		539798A93FBAA017BBE77F75 /* Pods_ChatMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FD25E319A5B1C2AD603E35 /* Pods-ChatMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMessenger.debug.xcconfig"; path = "Target Support Files/Pods-ChatMessenger/Pods-ChatMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		95184D482C1A986400BFD817 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		95184D4A2C1A991800BFD817 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		95184D4C2C1A9C0200BFD817 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		956A150E2C11513D00C50122 /* ChatMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956A15112C11513D00C50122 /* ChatMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessengerApp.swift; sourceTree = "<group>"; };
 		956A15132C11513D00C50122 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -91,13 +97,16 @@
 				95713B062C16A476009D7FCA /* ContentViewModel.swift */,
 				9579746A2C17F10900CC6A56 /* MessagesView.swift */,
 				9579746C2C17F14300CC6A56 /* MessagesViewModel.swift */,
+				957974722C1949AB00CC6A56 /* Contact.swift */,
+				9579746E2C1948DD00CC6A56 /* ContactsView.swift */,
+				957974702C19491F00CC6A56 /* ContactsViewModel.swift */,
 				95713B022C168CCE009D7FCA /* ImagePicker.swift */,
 				956A15272C11685900C50122 /* GoogleService-Info.plist */,
 				956A15152C11514000C50122 /* Assets.xcassets */,
 				956A15172C11514000C50122 /* Preview Content */,
-				9579746E2C1948DD00CC6A56 /* ContactsView.swift */,
-				957974702C19491F00CC6A56 /* ContactsViewModel.swift */,
-				957974722C1949AB00CC6A56 /* Contact.swift */,
+				95184D482C1A986400BFD817 /* Message.swift */,
+				95184D4A2C1A991800BFD817 /* ChatViewModel.swift */,
+				95184D4C2C1A9C0200BFD817 /* ChatView.swift */,
 			);
 			path = ChatMessenger;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 				95713B072C16A476009D7FCA /* ContentViewModel.swift in Sources */,
 				957974712C19491F00CC6A56 /* ContactsViewModel.swift in Sources */,
 				956A15242C115D1B00C50122 /* SignUpView.swift in Sources */,
+				95184D4D2C1A9C0200BFD817 /* ChatView.swift in Sources */,
 				9579746D2C17F14300CC6A56 /* MessagesViewModel.swift in Sources */,
 				9579746B2C17F10A00CC6A56 /* MessagesView.swift in Sources */,
 				956A15142C11513D00C50122 /* SignInView.swift in Sources */,
@@ -255,6 +265,8 @@
 				956A15122C11513D00C50122 /* ChatMessengerApp.swift in Sources */,
 				9579746F2C1948DD00CC6A56 /* ContactsView.swift in Sources */,
 				956A15202C11584E00C50122 /* SignInViewModel.swift in Sources */,
+				95184D4B2C1A991800BFD817 /* ChatViewModel.swift in Sources */,
+				95184D492C1A986400BFD817 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
