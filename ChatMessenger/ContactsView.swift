@@ -11,13 +11,25 @@ struct ContactsView: View {
     @StateObject var viewModel = ContactsViewModel()
     
     var body: some View {
+        
+        
         VStack {
+            
+            if viewModel.isLoading {
+                ProgressView()
+            }
             List(viewModel.contacts, id: \.self) { contact in
-                ContactRow(contact: contact)
+                NavigationLink{
+                    ChatView(username: contact.name)
+                } label: {
+                    ContactRow(contact: contact)
+                }
+                
             }
         }.onAppear {
             viewModel.getContacts()
         }
+        .navigationTitle("Contatos")
         
     }
    
