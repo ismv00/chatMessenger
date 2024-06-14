@@ -79,14 +79,15 @@ class SignUpViewModel : ObservableObject {
     
     // Função de criar usuário tendo como parametro a url da photo
     private func createUser(photoUrl: URL) {
+        let id = Auth.auth().currentUser!.uid
         // Cria a coleção no banco chamada Users
         Firestore.firestore().collection("users")
-            .document() // pega o nome e salva como document
+            .document(id) // pega o nome e salva como document
             
         // Set os dados como um dictionary = chave + valor
             .setData([
                 "name": name,
-                "uuid" : Auth.auth().currentUser!.uid,
+                "uuid" : id,
                 "profileUrl": photoUrl.absoluteString
             ]) { err in // Se existir um erro, mostra
                 self.isLoading = false
