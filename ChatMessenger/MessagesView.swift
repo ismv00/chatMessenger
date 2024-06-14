@@ -9,23 +9,36 @@ import SwiftUI
 
 struct MessagesView: View {
     @StateObject var viewModel = MessagesViewModel()
+    @State private var navigateToContacts = false
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("Ola Mundo")
-            }
-            .toolbar{
-                ToolbarItem(id: "contacts",
-                            placement: ToolbarItemPlacement.navigationBarTrailing, showsByDefault: true) {
-                    NavigationLink("Contatos", destination: ContactsView())
+                if viewModel.isLoading {
+                    ProgressView()
                 }
-                ToolbarItem(id: "logout",
-                            placement: ToolbarItemPlacement.navigationBarTrailing, showsByDefault: true) {
-                    Button("Logout") {
-                        viewModel.logout()
+                List(viewModel.contacts, id: \.self) { contact in
+                    NavigationLink{
+                        ChatView(contact: contact)
+                    } label: {
+                        ContactMessageRow(contact: contact)
                     }
                 }
+            }
+            .onAppear {
+                viewModel.getContacts()
+            }
+            .navigationTitle("Mensagens")
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    NavigationLink(Text("Contatos"), destination: ContactsView())
+                   
+                }
+                ToolbarItemGroup {
+                    viewModel.logout()
+                }
+                
+               
             }
         }
     }
