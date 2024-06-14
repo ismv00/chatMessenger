@@ -100,13 +100,13 @@
 				957974722C1949AB00CC6A56 /* Contact.swift */,
 				9579746E2C1948DD00CC6A56 /* ContactsView.swift */,
 				957974702C19491F00CC6A56 /* ContactsViewModel.swift */,
+				95184D4A2C1A991800BFD817 /* ChatViewModel.swift */,
+				95184D4C2C1A9C0200BFD817 /* ChatView.swift */,
+				95184D482C1A986400BFD817 /* Message.swift */,
 				95713B022C168CCE009D7FCA /* ImagePicker.swift */,
 				956A15272C11685900C50122 /* GoogleService-Info.plist */,
 				956A15152C11514000C50122 /* Assets.xcassets */,
 				956A15172C11514000C50122 /* Preview Content */,
-				95184D482C1A986400BFD817 /* Message.swift */,
-				95184D4A2C1A991800BFD817 /* ChatViewModel.swift */,
-				95184D4C2C1A9C0200BFD817 /* ChatView.swift */,
 			);
 			path = ChatMessenger;
 			sourceTree = "<group>";
