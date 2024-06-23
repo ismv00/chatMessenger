@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct MessagesView: View {
-    @StateObject var viewModel = MessagesViewModel()
+struct MessageView: View {
+    @StateObject var viewModel = MessageViewModel()
     
     var body: some View {
         NavigationView {
@@ -30,7 +30,7 @@ struct MessagesView: View {
             .navigationTitle("Mensagens")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    NavigationLink("Contatos", destination: ContactsView())
+                    NavigationLink("Contatos", destination: ContactView())
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Logout") {
@@ -60,7 +60,6 @@ struct MessagesView: View {
                     if let msg = contact.lastMessage {
                         Text(msg)
                             .lineLimit(1)
-                            .truncationMode(.tail)
                     }
                 }
                 Spacer()
@@ -72,6 +71,6 @@ struct MessagesView: View {
 }
    
 #Preview {
-        MessagesView()
+        MessageView()
 }
 

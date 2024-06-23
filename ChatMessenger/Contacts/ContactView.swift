@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ContactsView: View {
-    @StateObject var viewModel = ContactsViewModel()
+struct ContactView: View {
+    @StateObject var viewModel = ContactViewModel()
     
     var body: some View {
         
@@ -57,5 +57,5 @@ struct ContactRow: View {
 }
 
 #Preview {
-    ContactsView()
+    ContactView()
 }
