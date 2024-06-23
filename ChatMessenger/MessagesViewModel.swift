@@ -25,14 +25,20 @@ class MessagesViewModel : ObservableObject {
                             let document = doc.document
                             
                             self.contacts.removeAll()
-                            self.contacts.append(Contact(uuid: document.documentID, name: document.data()["username"] as! String, profileUrl: document.data()["photoUrl"] as! String, lastMessage: document.data()["lastMessage"] as! String, timestamp: document.data()["timestamp"] as! UInt))
+                            self.contacts.append(Contact(uuid: document.documentID, 
+                                                         name: document.data()["username"] as! String,
+                                                         profileUrl: document.data()["photoUrl"] as! String,
+                                                         lastMessage: document.data()["lastMessage"] as! String,
+                                                         timestamp: document.data()["timestamp"] as! UInt))
                         }
                     }
                 }
             }
         
-        func logout() {
-            try? Auth.auth().signOut()
-        }
+        
+    }
+    
+    func logout() {
+        try? Auth.auth().signOut()
     }
 }

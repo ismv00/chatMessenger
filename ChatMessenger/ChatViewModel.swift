@@ -25,6 +25,7 @@ class ChatViewModel : ObservableObject {
             .getDocument { snapshot, error in
                 if let error = error  {
                     print("ERROR: fetching Documents \(error)")
+                    return
                 }
                 
                 if let document = snapshot?.data() {

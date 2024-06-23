@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MessagesView: View {
     @StateObject var viewModel = MessagesViewModel()
-    @State private var navigateToContacts = false
     
     var body: some View {
         NavigationView {
@@ -30,47 +29,49 @@ struct MessagesView: View {
             }
             .navigationTitle("Mensagens")
             .toolbar {
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    NavigationLink(Text("Contatos"), destination: ContactsView())
-                   
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink("Contatos", destination: ContactsView())
                 }
-                ToolbarItemGroup {
-                    viewModel.logout()
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Logout") {
+                        viewModel.logout()
+                    }
                 }
-                
-               
-            }
+              }
         }
     }
-}
-
-struct ContactMessageRow: View {
-    var contact: Contact
     
-    var body: some View {
-        HStack {
-            AsyncImage(url: URL(string: contact.profileUrl)) { image in
-                image.resizable()
-                    .scaledToFit()
-                
-            }placeholder: {
-                ProgressView()
-            }
-            .frame(width: 50, height: 50)
-            
-            VStack(alignment: .leading) {
-                Text(contact.name)
-                if let msg = contact.lastMessage {
-                    Text(msg)
-                }
-            }
-            Spacer()            
-        }
+    struct ContactMessageRow: View {
+        var contact: Contact
         
+        var body: some View {
+            HStack {
+                AsyncImage(url: URL(string: contact.profileUrl)) { image in
+                    image.resizable()
+                        .scaledToFit()
+                    
+                }placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 50, height: 50)
+                
+                VStack(alignment: .leading) {
+                    Text(contact.name)
+                    if let msg = contact.lastMessage {
+                        Text(msg)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                    }
+                }
+                Spacer()
+            }
+            
+        }
     }
+    
 }
-
-
+   
 #Preview {
-    MessagesView()
+        MessagesView()
 }
+
