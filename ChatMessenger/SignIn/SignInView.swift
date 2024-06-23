@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SignInView: View {
     
-    @StateObject var viewModel = SignInViewModel() // Instanciando a ViewModel que contem o modelo de dados e salvando na variável viewmodel
+    @StateObject var viewModel = SignInViewModel(repo: SignInRepository()) // Instanciando a ViewModel que contem o modelo de dados e salvando na variável viewmodel
     
     var body: some View {
         NavigationView {
