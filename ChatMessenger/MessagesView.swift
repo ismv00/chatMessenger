@@ -60,7 +60,6 @@ struct MessagesView: View {
                     if let msg = contact.lastMessage {
                         Text(msg)
                             .lineLimit(1)
-                            .truncationMode(.tail)
                     }
                 }
                 Spacer()
