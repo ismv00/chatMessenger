@@ -29,6 +29,9 @@
 		9579746F2C1948DD00CC6A56 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9579746E2C1948DD00CC6A56 /* ContactView.swift */; };
 		957974712C19491F00CC6A56 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957974702C19491F00CC6A56 /* ContactViewModel.swift */; };
 		957974732C1949AB00CC6A56 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957974722C1949AB00CC6A56 /* Contact.swift */; };
+		958757A42C290CF8003605A3 /* MessageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958757A32C290CF8003605A3 /* MessageRepository.swift */; };
+		958757A62C291224003605A3 /* ContactRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958757A52C291224003605A3 /* ContactRepository.swift */; };
+		958757A82C2914FB003605A3 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958757A72C2914FB003605A3 /* ChatRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		9579746E2C1948DD00CC6A56 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 		957974702C19491F00CC6A56 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		957974722C1949AB00CC6A56 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		958757A32C290CF8003605A3 /* MessageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRepository.swift; sourceTree = "<group>"; };
+		958757A52C291224003605A3 /* ContactRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRepository.swift; sourceTree = "<group>"; };
+		958757A72C2914FB003605A3 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
 		DF4533A8A7CD94E57A9A9B17 /* Pods-ChatMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatMessenger.release.xcconfig"; path = "Target Support Files/Pods-ChatMessenger/Pods-ChatMessenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +149,7 @@
 			children = (
 				95184D4C2C1A9C0200BFD817 /* ChatView.swift */,
 				95184D4A2C1A991800BFD817 /* ChatViewModel.swift */,
+				958757A72C2914FB003605A3 /* ChatRepository.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			children = (
 				9579746E2C1948DD00CC6A56 /* ContactView.swift */,
 				957974702C19491F00CC6A56 /* ContactViewModel.swift */,
+				958757A52C291224003605A3 /* ContactRepository.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			children = (
 				9579746A2C17F10900CC6A56 /* MessageView.swift */,
 				9579746C2C17F14300CC6A56 /* MessageViewModel.swift */,
+				958757A32C290CF8003605A3 /* MessageRepository.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -324,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				957974732C1949AB00CC6A56 /* Contact.swift in Sources */,
+				958757A82C2914FB003605A3 /* ChatRepository.swift in Sources */,
 				957515EC2C27D59A00508BF8 /* SignUpRepository.swift in Sources */,
 				95713B072C16A476009D7FCA /* ContentViewModel.swift in Sources */,
 				957974712C19491F00CC6A56 /* ContactViewModel.swift in Sources */,
@@ -335,7 +345,9 @@
 				95713B052C16A45E009D7FCA /* ContentView.swift in Sources */,
 				956A15262C115D6C00C50122 /* SignUpViewModel.swift in Sources */,
 				95713B032C168CCE009D7FCA /* ImagePicker.swift in Sources */,
+				958757A42C290CF8003605A3 /* MessageRepository.swift in Sources */,
 				956A15122C11513D00C50122 /* ChatMessengerApp.swift in Sources */,
+				958757A62C291224003605A3 /* ContactRepository.swift in Sources */,
 				9579746F2C1948DD00CC6A56 /* ContactView.swift in Sources */,
 				956A15202C11584E00C50122 /* SignInViewModel.swift in Sources */,
 				95184D4B2C1A991800BFD817 /* ChatViewModel.swift in Sources */,
