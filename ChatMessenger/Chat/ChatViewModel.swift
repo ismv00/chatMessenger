@@ -16,6 +16,8 @@ class ChatViewModel : ObservableObject {
     var newCount = 0
     let limit = 20
     
+    var inserting = false
+    
     private let repo: ChatRepository
     
     init(repo: ChatRepository) {
@@ -23,9 +25,16 @@ class ChatViewModel : ObservableObject {
     }
     
     func onAppear(contact: Contact) {
-        repo.fetchChat(limit: limit, contact: contact, lastMessage: self.messages.last) { messages, newCount in
-            self.messages.append(contentsOf: messages)
-            self.newCount = newCount
+        repo.fetchChat(limit: limit, contact: contact, lastMessage: self.messages.last) { message in
+            
+            if self.inserting {
+                self.messages.insert(message, at: 0)
+            } else {
+                self.messages.append(message)
+            }
+            
+            self.inserting = false
+            self.newCount = self.messages.count
         }
     }
     
@@ -33,8 +42,9 @@ class ChatViewModel : ObservableObject {
         let text = self.text.trimmingCharacters(in: .whitespacesAndNewlines)
         self.text = ""
         newCount = newCount + 1
+        self.inserting = true
         
-        repo.sendMessage(inserting: true,text: text, contact: contact)
+        repo.sendMessage(text: text, contact: contact)
 
     }
     
