@@ -11,7 +11,7 @@ ChatMessenger is a chat application developed in SwiftUI, using the MVVM (Model-
 
 ## Demo Video
 
-[![ChatMessenger Demo](https://youtu.be/-i0KQ5Ki4cI)
+[![https://img.youtube.com/vi/-i0KQ5Ki4cI/maxresdefault.jpg](https://youtu.be/-i0KQ5Ki4cI)
 
 ## Technologies Used
 
@@ -58,16 +58,6 @@ ChatMessenger is a chat application developed in SwiftUI, using the MVVM (Model-
     ```
 
     Select the desired simulator or device and click "Run" (Cmd+R).
-
-## Project Structure
-
-ChatMessenger/
-├── ChatMessengerApp.swift # App entry point
-├── Models/ # Data models
-├── ViewModels/ # Presentation logic and data manipulation
-├── Views/ # SwiftUI user interfaces
-├── Resources/ # Resource files (assets, GoogleService-Info.plist, etc.)
-└── Services/ # Firebase integration services
 
 
 ## Functionality
