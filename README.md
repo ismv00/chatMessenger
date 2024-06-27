@@ -10,8 +10,9 @@ ChatMessenger is a chat application developed in SwiftUI, using the MVVM (Model-
 - MVVM architecture
 
 ## Demo Video
+### Click to see demonstration
 
-[!(https://youtu.be/-i0KQ5Ki4cI)
+[![ChatMessenger Demo](https://github.com/ismv00/chatMessenger/blob/32b984acdcb97eba876ce11436e300cfc0580c63/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20Max%20-%202024-06-26%20at%2023.08.00.png)](https://youtu.be/-i0KQ5Ki4cI)
 
 ## Technologies Used
 
